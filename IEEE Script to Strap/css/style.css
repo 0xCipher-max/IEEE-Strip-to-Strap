@@ -1,0 +1,199 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/* Scrollbar-edit */
+
+
+body::-webkit-scrollbar {
+  width: 9px;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent; 
+    box-shadow: 0px 0px 0px 100000vh black;
+    border-radius: 10px;
+}
+
+
+/* Navbar Styling */
+header .carousel-inner .item {
+	height: 100vh;
+}
+.navbar-inverse {
+	background-color: white;
+	border-color: transparent;
+    float: left;
+}
+.navbar-inverse .navbar-brand {
+	color: black;
+	font-size: 40px;
+	padding: 40px 15px;
+	font-weight: 900;
+}
+.nav.navbar-nav.navbar-center {
+    margin: 25px 0;
+    /* float: left; */
+    position: relative;
+    left: 18vw;
+    /* margin-right: 15vw; */
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: black;
+	text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: blue;
+}
+.right-nav{
+    float: right;
+    margin-left: 20vw;
+}
+.search-nav{
+    background-color: red;
+    /* height: 100px; */
+    text-align: center;
+}
+
+/* Carousel Styling */
+
+.banner {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.carousel-caption {
+	padding-bottom: 300px;
+	font-family: poppins;
+}
+.carousel-caption h1 {
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: bold;
+    color: #EDBB00;
+}
+.carousel-caption h2 span {
+	color: #EDBB00;
+}
+.carousel-caption a {
+	background: cyan;
+	padding: 15px 35px;
+	display: inline-block;
+	margin-top: 15px;
+	color: black;
+	text-transform: uppercase;
+	border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.carousel-caption a:hover{
+    color: white;
+    background-color: purple;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.carousel-control.right {
+	background-image: none;
+}
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-indicators .active {
+	background-color: #EDBB00;
+	border-color: #EDBB00;
+}
+
+/* Main Screen CSS*/
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-blue{
+    background-color: rgb(11, 11, 59);
+    color: white;
+    padding: 20px;
+}
+
+.inline-content{
+    display: inline;
+}
+.p-5{
+    padding: 10px;
+    border: 3px solid #555 ;
+    border-radius: 8px;
+}
+.ml-3{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+input, select{
+    width: 200px;
+}
+.button{
+    background-color: rgb(228, 74, 99);
+    padding: 12px;
+    /* border: 2px solid red; */
+    width: 100px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/*responsive css*/
+@media (max-width: 1422px) {
+    .right-nav{
+        margin-left: 10vw;
+    }
+}
+@media (max-width: 1234px) {
+    .right-nav{
+        margin-left: 5vw;
+    }
+}
+@media (max-width: 1144px) {
+    .right-nav{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+	}
+	.carousel-caption h1 {
+        font-size: 70px;
+	}
+}
+@media only screen and (max-width: 767px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 30px;
+		padding: 20px 15px;
+	}
+	.navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+	}
+	.carousel-caption h1 {
+        font-size: 50px;
+	}
+	.carousel-caption h3 {
+        font-size: 18px;
+	}
+	.carousel-caption a {
+        padding: 10px 25px;
+	}
+}
+
+@media (max-width: 1000px) {
+    .inline-content{
+        display: block;
+        text-align: center;
+    }   
+}
